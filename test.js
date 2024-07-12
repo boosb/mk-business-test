@@ -52,7 +52,8 @@ class Api
          * @param		{string|number} field
          * @return		{string}
          */
-        _get_word_from_field(field) {
+        _get_word_from_field(field) 
+        {
             let field_str = String(field);
             let words = field_str.split(' ');
             return words.join('%20');
