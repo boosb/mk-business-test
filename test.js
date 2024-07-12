@@ -32,15 +32,15 @@ class Api
 	 */
 	get_api_path(object, template)
 	{
-		/* Здесь ваш код */
-        let array_template = template.split('%');
-        let array_result = array_template.map((item) => 
-        {
-            let field = object[item];
-            return field ? this._get_word_from_field(field) : item;
-        });
+            /* Здесь ваш код */
+            let array_template = template.split('%');
+            let array_result = array_template.map((item) => 
+            {
+                let field = object[item];
+                return field ? this._get_word_from_field(field) : item;
+            });
 
-		return array_result.join('');
+            return array_result.join('');
 	}
 
     /**
