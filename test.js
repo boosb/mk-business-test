@@ -43,19 +43,20 @@ class Api
             return array_result.join('');
 	}
 
-    /**
-	 * Возвращает строку нужного формата
-	 *
-	 * @author		Morozov Artem 
-	 * @version		v.1.0 (dd/mm/yyyy)
-	 * @param		{string|number} field
-	 * @return		{string}
-	 */
-    _get_word_from_field(field) {
-        let field_str = String(field);
-        let words = field_str.split(' ');
-        return words.join('%20');
-    }
+        /**
+         * Возвращает строку нужного формата
+         *
+         * @private
+         * @author		Morozov Artem 
+         * @version		v.1.0 (dd/mm/yyyy)
+         * @param		{string|number} field
+         * @return		{string}
+         */
+        _get_word_from_field(field) {
+            let field_str = String(field);
+            let words = field_str.split(' ');
+            return words.join('%20');
+        }
 }
 
 let user =
